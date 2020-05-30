@@ -9,20 +9,20 @@ The multiple file option will create individual files/components for each SVG in
 
 ## Single file with all React exports
 ```bash
-npm run svg-to-react:single-file
+npm run start:single
 ```
 **Or..**
 ```bash
-yarn run svg-to-react:single-file
+yarn run start:single
 ```
 
 ## Multiple files - a file for each React export
 ```bash
-npm run svg-to-react:multiple-files
+npm run start:multiple
 ```
 **Or..**
 ```bash
-yarn run svg-to-react:multiple-files
+yarn run start:multiple
 ```
 
 ## License

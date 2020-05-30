@@ -6,7 +6,7 @@ const createMultipleFiles = (names, input) => {
 
     // Template for component
     const component = `import React from 'react';`+'\n\n'+
-    `const ${name.componentName} = () => {`+'\n'+
+    `const ${name.componentName}Icon = () => {`+'\n'+
     `  return (`+'\n'+
     `    ${svg}`+'\n'+
     `  );`+'\n'+

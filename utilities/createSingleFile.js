@@ -6,7 +6,7 @@ const createSingleFile = (names, input) => {
     const svg = fs.readFileSync(`${input}/${name.originalFileName}`, { encoding: 'utf8' });
     if(name.originalFileName.includes('.svg'))
       accumulator += '\n' +
-      `export const ${name.componentName} = () => {`+'\n'+
+      `export const ${name.componentName}Icon = () => {`+'\n'+
       ` return (`+'\n'+
       `    ${svg}`+'\n'+
       `  );`+'\n'+
