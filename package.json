@@ -1,0 +1,13 @@
+{
+  "name": "svg-to-react",
+  "version": "1.0.0",
+  "description": "Script to convert SVG files into React components",
+  "main": "index.js",
+  "scripts": {
+    "svg-to-react:single-file": "node index single",
+    "svg-to-react:multiple-files": "node index multiple",
+    "test": "node index one two three"
+  },
+  "author": "Daniel Wade",
+  "license": "ISC"
+}
