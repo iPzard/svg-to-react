@@ -4,14 +4,15 @@ const createSingleFile = (names, input) => {
 
   const components = names.reduce((accumulator, name) => {
     const svg = fs.readFileSync(`${input}/${name.originalFileName}`, { encoding: 'utf8' });
-
-    return accumulator += '\n' +
-    `export const ${name.componentName} = () => {`+'\n'+
-    ` return (`+'\n'+
-    `    ${svg}`+'\n'+
-    `  );`+'\n'+
-    `};` + '\n';
-    
+    if(name.originalFileName.includes('.svg'))
+      accumulator += '\n' +
+      `export const ${name.componentName} = () => {`+'\n'+
+      ` return (`+'\n'+
+      `    ${svg}`+'\n'+
+      `  );`+'\n'+
+      `};` + '\n';
+      
+    return accumulator;
   }, "import React from 'react';\n");
 
   // If output directory doesn't exist, create one
