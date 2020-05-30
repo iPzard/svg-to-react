@@ -7,7 +7,7 @@ Allows you to convert all of your SVG files into React (.js) files. Place your S
 
 The multiple file option will create individual files/components for each SVG in an `./output/single/<filename>` file. The multiple file option will also convert filenames which use dashes to PascalCase. 
 
-## Export to a single file
+## Single file with all React exports
 ```bash
 npm run svg-to-react:single-file
 ```
@@ -16,7 +16,7 @@ npm run svg-to-react:single-file
 yarn run svg-to-react:single-file
 ```
 
-## Export to multiple files
+## Multiple files - a file for each React export
 ```bash
 npm run svg-to-react:multiple-files
 ```
