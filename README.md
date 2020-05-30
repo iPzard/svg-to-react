@@ -1,6 +1,6 @@
 # SVT to React
 
-> Convert SVG files into React components — in bulk.
+> Transform SVG files into React component files — in bulk.
 
 ## Description
 Allows you to convert all of your SVG files into React (.js) files. Place your SVGs in a root `svg/` folder, and run one of the scripts below. The single file option will create a single `./output/single/icons.js` file with each SVG available as an export.<br><br>
