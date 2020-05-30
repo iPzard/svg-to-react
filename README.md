@@ -1,4 +1,4 @@
-# SVT to React
+# SVG to React
 
 > Transform SVG files into React component files — in bulk.
 
