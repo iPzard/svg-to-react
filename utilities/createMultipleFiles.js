@@ -6,13 +6,11 @@ const createMultipleFiles = (names, input) => {
 
     // Template for component
     const component = `import React from 'react';`+'\n\n'+
-    `const ${name.componentName}Icon = () => {`+'\n'+
+    `export const ${name.componentName}Icon = () => {`+'\n'+
     `  return (`+'\n'+
     `    ${svg}`+'\n'+
     `  );`+'\n'+
-    `};`+'\n\n'+
-  
-    `export default ${name.componentName};`;
+    `};`;
 
     if(name.originalFileName.includes('.svg')) {
       // If output directory doesn't exist, create one
@@ -20,7 +18,7 @@ const createMultipleFiles = (names, input) => {
       if (!fs.existsSync('./output/multiple')) fs.mkdirSync('./output/multiple');
       
       // Write component to output directory
-      fs.writeFileSync(`./output/multiple/${name.newFileName}`, component);
+      fs.writeFileSync(`./output/multiple/${name.newFileName}Icon`, component);
     }
     
   });
