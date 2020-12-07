@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start:single": "node index single",
-    "start:multiple": "node index multiple",
-    "test": "node index one two three"
+    "start:multiple": "node index multiple"
   },
   "author": "Daniel Wade",
-  "license": "ISC"
+  "license": "MIT"
 }
