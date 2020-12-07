@@ -6,7 +6,7 @@
 ## 📜 Scripts
 
 The single file script will create a single `./output/single/icons.js` file with each SVG available as an export.
-The multiple file script will create individual files/components for each SVG in an `./output/single/<filename>` file. The multiple file script will also convert filenames which use dashes to PascalCase.
+The multiple file script will create individual files/components for each SVG in an `./output/single/<filename>` file. The multiple file script will also convert filenames which use dashes to PascalCase.<br>
 
 **Single file:**
 ```bash
