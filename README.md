@@ -19,5 +19,9 @@ yarn run start:multiple
 ```
 <br>
 
+## 🦟 Bugs
+Bugs reported on the project's [issues page](https://github.com/iPzard/svg-to-react/issues) will be exterminated as quickly as possible, be sure to include steps to reproduce so they can be spotted easily.
+<br><br>
+
 ## License
-MIT © [SVG to React](https://github.com/iPzard/svg-to-react)
+MIT © [SVG to React](https://github.com/iPzard/svg-to-react/blob/master/LICENSE)
