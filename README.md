@@ -1,7 +1,7 @@
 # SVG to React
 
-[![Build](https://img.shields.io/badge/build-passing-%2357a9a9?style=for-the-badge)](https://github.com/iPzard/svg-to-react#readme)
-[![License](https://img.shields.io/github/license/iPzard/svg-to-react?color=57a9a9&style=for-the-badge)](https://github.com/iPzard/svg-to-react/blob/master/LICENSE)
+[![Build](https://img.shields.io/badge/build-passing-%23A95757?style=for-the-badge)](https://github.com/iPzard/svg-to-react#readme)
+[![License](https://img.shields.io/github/license/iPzard/svg-to-react?color=A95757&style=for-the-badge)](https://github.com/iPzard/svg-to-react/blob/master/LICENSE)
 
 > Convert multiple SVG files into React (.js) files. Place your SVGs in the root-level `svg/` directory, and run one of the scripts listed below to process your batch.
 <br>
