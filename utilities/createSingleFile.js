@@ -3,7 +3,9 @@ const fs = require('fs');
 const createSingleFile = (names, input) => {
 
   const components = names.reduce((accumulator, name) => {
-    const svg = fs.readFileSync(`${input}/${name.originalFileName}`, { encoding: 'utf8' });
+    const svg = fs.readFileSync(`${input}/${name.originalFileName}`, { encoding: 'utf8' })
+      .replace(/(?!\w):\w/g, (attribute) => attribute.replace(':', '').toUpperCase());
+
     if(name.originalFileName.includes('.svg'))
       accumulator += '\n' +
       `export const ${name.componentName}Icon = () => {`+'\n'+

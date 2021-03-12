@@ -2,8 +2,9 @@ const fs = require('fs');
 
 const createMultipleFiles = (names, input) => {
   names.forEach(name => {
-    const svg = fs.readFileSync(`${input}/${name.originalFileName}`, { encoding: 'utf8' });
-
+    const svg = fs.readFileSync(`${input}/${name.originalFileName}`, { encoding: 'utf8' })
+      .replace(/(?!\w):\w/g, (attribute) => attribute.replace(':', '').toUpperCase());
+      
     // Template for component
     const component = `import React from 'react';`+'\n\n'+
     `export const ${name.componentName}Icon = () => {`+'\n'+
@@ -18,7 +19,7 @@ const createMultipleFiles = (names, input) => {
       if (!fs.existsSync('./output/multiple')) fs.mkdirSync('./output/multiple');
       
       // Write component to output directory
-      fs.writeFileSync(`./output/multiple/${name.newFileName}Icon`, component);
+      fs.writeFileSync(`./output/multiple/${name.newFileName}`.replace(/\.js$/, 'Icon.js'), component);
     }
     
   });
